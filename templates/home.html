@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,50 +12,145 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <style>
-        .icons_wrapper{
+        .icons_wrapper {
             text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-                <div class="icons_wrapper">
-                    <div>
-                        <h1 class="pink-text  right-align"> #trashtag </h1>
-                        <i class="large material-icons">public</i>>
-                        <i class="large material-icons">add</i>
-                        <i class="large material-icons">accessibility</i>
-                        <i class="large material-icons">drag_handle</i>
-                        <i class="large material-icons pink-text">local_florist</i>
-                    </div>        
-                </div>
+    <nav class="nav-wrapper pink">
+        <div class="container">
+            <div class="brand-logo ">#trashtag</div>
+            <a href="#" class="sidenav-trigger" data-target="sidebar">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="{% url 'blog' %}">Submit Location</a></li>
+                <li><a href="">Browse</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- responsive nav -->
+    <div class="sidenav" id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Submit Location</a></li>
+            <li><a href="#">Browse</a></li>
+        </ul>
+    </div>
+
+    <div class="container pd-4">
+        <div class="icons_wrapper">
+            <div>
+                <i class="large material-icons">public</i>>
+                <i class="large material-icons">add</i>
+                <i class="large material-icons">accessibility</i>
+                <i class="large material-icons">drag_handle</i>
+                <i class="large material-icons pink-text">local_florist</i>
+            </div>
+        </div>
     </div>
 
     <div class="container box grey lighten-2">
         <h1 class="btn waves-effect waves-light">Test</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Animi ab rem modi, doloremque tempora eveniet voluptatibus beatae aspernatur aliquam 
-            expedita labore, odio soluta eligendi amet officia optio officiis deserunt accusantium. Lorem, 
-            ipsum dolor sit amet consectetur adipisicing elit. Error cum eaque perspiciatis a qui excepturi 
-            sed corrupti, veniam, dolores placeat, modi illo ipsum odit ratione magnam cupiditate. Quae, similique esse.</p>
-    
-   <a href="#" class="btn waves-effect waves-light">
-    <span>Send</span>
-    <i class="material-icons left">fast_forward</i>
-   </a>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Animi ab rem modi, doloremque tempora eveniet voluptatibus beatae aspernatur aliquam
+            expedita labore, odio soluta eligendi amet officia optio officiis deserunt accusantium. Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Error cum eaque perspiciatis a qui excepturi
+            sed corrupti, veniam, dolores placeat, modi illo ipsum odit ratione magnam cupiditate. Quae, similique esse.
+        </p>
 
-   <a href="" class="btn-floating pulse">
-           <i class="material-icons">add</i>
-   </a>
+        <a href="#" class="btn waves-effect waves-light">
+            <span>Send</span>
+            <i class="material-icons left">fast_forward</i>
+        </a>
 
-   <a href="" class="btn-floating pulse white">
-       <i class="material-icons red-text">edit</i>
-   </a>
+        <a href="" class="btn-floating pulse">
+            <i class="material-icons">add</i>
+        </a>
+
+        <a href="" class="btn-floating pulse white">
+            <i class="material-icons red-text">edit</i>
+        </a>
     </div>
 
+    <div class="row">
+        <div class="col s12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static.boredpanda.com/blog/wp-content/uploads/2019/03/trashtag-challenge-people-clean-surroundings-105-5c8658a002dd1__700.jpg" >
+                    
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lowlands City</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi officiis,
+                        tenetur et illo amet provident reprehenderit quisquam libero vitae quia, animi
+                        inventore ad ab consequatur architecto eos est veniam.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">More Details</a>
+                    <a href="#">Team</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://twistedsifter.files.wordpress.com/2019/03/trashtag-best-12.jpg?w=640&h=360" alt="">    
+                    
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Aksa Beach</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat magni ipsum quae,
+                         doloribus, vitae eaque repellat iure, quas ratione accusamus ea. 
+                        Facilis, sapiente ipsum! Minus iure expedita ratione veritatis ipsa?</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Details</a>
+                    <a href="#">Team</a>
+                </div>
+            </div>
+        </div>
+            <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://borneobulletin.com.bn/wp-content/uploads/2019/03/page-8-A_18032019.jpg" alt="">    
+                           
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Nagarjuna Forest</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat magni ipsum quae,
+                                 doloribus, vitae eaque repellat iure, quas ratione accusamus ea. 
+                                Facilis, sapiente ipsum! Minus iure expedita ratione veritatis ipsa?</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Details</a>
+                            <a href="#">Team</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        })
+    </script>
 </body>
+
 </html>
